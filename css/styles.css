@@ -1,0 +1,318 @@
+
+
+
+div.navBar{
+  
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color: rgba(47, 46, 46, 1);
+  padding:1rem 1rem;
+}
+
+body{
+  margin:0px;
+}
+
+ul.navigationItems li{
+    
+    color:White;
+    list-style: none;
+    float: right;
+    padding: 0px 20px;
+	line-height:2rem;
+	
+   
+}
+
+li a{
+    
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: Avenir;
+
+}
+
+
+.buyNow{
+    
+    background-color: rgba(68, 219, 189, 1);
+	padding: 8px 15px;
+    text-align: center;
+    font-family:Avenir;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(68, 219, 189, 1);
+    
+}
+
+div.logoPlaceholder{
+    
+    width:60px;
+	margin-left:70px;
+	float:left;
+	height:auto;
+    cursor: pointer;
+    background-color: rgba(47, 46, 46, 1);
+    border-bottom-style: solid;
+    border-bottom-color: rgba(47, 46, 46, 1);
+    
+   
+}
+
+div.logoPlaceholder img{
+  
+  width:100%;
+  height:auto;
+}
+
+
+
+
+
+
+.productImage{
+  
+   padding-top:10%;
+  padding-bottom:10px;
+  
+  margin-top:20%;
+  
+}
+
+
+div.productDescription{
+  
+  margin-top:20%;
+  padding-top:10%;
+  padding-left:10%;
+  
+  
+}
+
+
+div.productDescription h1,p{
+  
+  font-family:Avenir;
+  
+}
+
+div.productDescription p{
+  
+  font-size:1rem;
+}
+
+
+.imageShades{
+  
+  width:100%;
+  height:auto;
+  
+  
+}
+
+div.productDescription a{
+  
+  text-decoration:underline;
+  font-family:Avenir;
+  font-weight:600;
+  color:rgba(0,0,0,0.6);
+}
+
+div.secondDescription{
+  
+  margin-top:30px;
+  
+}
+
+/***********HOVERS************/
+
+.buyNow:hover{
+    
+    animation-name: buyNowAnimation;
+    animation-duration: 0.5s;
+	animation-fill-mode:forwards;
+    
+}
+
+ ul.navigationItems li:hover{
+    
+    
+    color: #cccccc;
+    
+}
+
+div.logoPlaceholder:hover{
+    
+
+    animation-name: logoAnimation;
+    animation-duration: 0.3s;
+	animation-fill-mode:forwards;
+    
+   } 
+    
+
+
+
+
+
+
+/***************MOBILE***************/
+
+@media screen and (max-width :600px){
+  
+  
+  ul li:not(:nth-child(2)){
+            
+            display: none;
+			
+        }
+ 
+  ul.navigationItems li{
+	 padding:0px 0px;
+  }
+  
+  
+  div.logoPlaceholder{
+	
+	
+	margin-left:0px;
+	
+	
+	
+  }
+  
+  div.logoPlaceholder:hover{
+	
+	animation-name:mobileLogoAnimation;
+    animation-duration: 0.3s;
+	animation-fill-mode:forwards;
+    
+  }
+  
+  div.navBar{
+	
+	padding:0.8rem 0.8rem;
+	
+  }
+  
+  ul.navigationItems {
+
+  }
+  
+  div.productDescription{
+  
+  padding-top:10%;
+  padding-left:5%;
+  
+  
+}
+
+  div.productImage img{
+	
+	content: url("/images/shades-mobile.jpg")
+  }
+  
+  
+}
+
+
+ 
+
+
+ 
+/***********ANIMATIONS*************/
+@keyframes buyNowAnimation{
+  
+  from {
+      
+	background-color: rgba(68, 219, 189, 1);
+	padding: 8px 15px;
+    text-align: center;
+    font-family:Avenir;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(68, 219, 189, 1);
+    
+    }
+	
+    to {
+    background-color: rgba(47, 46, 46, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(68, 219, 189, 1);
+    text-align: center;
+    color:  rgba(68, 219, 189, 1);
+	  }
+    }
+	
+	
+@keyframes logoAnimation{
+    
+    from{
+        
+     width:60px;
+	margin-left:70px;
+	float:left;
+	height:auto;
+    cursor: pointer;
+    background-color: rgba(47, 46, 46, 1);
+    border-bottom-style: solid;
+    border-bottom-color: rgba(47, 46, 46, 1);
+        
+    }
+    to{
+        
+    width:60px;
+	margin-left:70px;
+	float:left;
+	height:auto;
+    cursor: pointer;
+    background-color: rgba(47, 46, 46, 1);
+    border-bottom-style: solid;
+    border-bottom-color: White;
+    }
+    
+}
+
+
+@keyframes mobileLogoAnimation{
+    
+    from{
+        
+     width:60px;
+	margin-left:0px;
+	float:left;
+	height:auto;
+    cursor: pointer;
+    background-color: rgba(47, 46, 46, 1);
+    border-bottom-style: solid;
+    border-bottom-color: rgba(47, 46, 46, 1);
+        
+    }
+    to{
+        
+    width:60px;
+	margin-left:0px;
+	float:left;
+	height:auto;
+    cursor: pointer;
+    background-color: rgba(47, 46, 46, 1);
+    border-bottom-style: solid;
+    border-bottom-color: White;
+    }
+    
+}
+
+
+
+/****************FONTS*****************/
+
+@font-face {
+    font-family:avenir;
+    src: url(/fonts/avenir.ttf);
+
+}
+
