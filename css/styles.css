@@ -23,6 +23,8 @@ ul.navigationItems li{
     padding: 0px 20px;
 	line-height:2rem;
 	
+	cursor:pointer;
+	
    
 }
 
@@ -73,19 +75,19 @@ div.logoPlaceholder img{
 
 
 
-.productImage{
+div.productImage{
   
    padding-top:10%;
   padding-bottom:10px;
   
-  margin-top:20%;
+  margin-top:10%;
   
 }
 
 
 div.productDescription{
   
-  margin-top:20%;
+  margin-top:10%;
   padding-top:10%;
   padding-left:10%;
   
@@ -153,7 +155,17 @@ div.logoPlaceholder:hover{
     
    } 
     
+i {
+    border: solid rgba(68, 219, 189, 1);;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
 
+.arrowRight {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
 
 
@@ -161,7 +173,7 @@ div.logoPlaceholder:hover{
 
 /***************MOBILE***************/
 
-@media screen and (max-width :600px){
+@media screen and (max-width :750px){
   
   
   ul li:not(:nth-child(2)){
@@ -198,14 +210,16 @@ div.logoPlaceholder:hover{
 	
   }
   
-  ul.navigationItems {
-
+  div.productImage {
+      
+	margin-top:20%;
   }
   
   div.productDescription{
   
   padding-top:10%;
   padding-left:5%;
+  margin-top:20%;
   
   
 }
@@ -215,8 +229,52 @@ div.logoPlaceholder:hover{
 	content: url("/images/shades-mobile.jpg")
   }
   
+  div.productDescription h1{
+	
+	font-size:2rem;
+  }
+}
+
+
+div.titleHowItWorks{
+  
+  margin-top:20%;
+  padding-left:2%;
   
 }
+
+div.descriptionHow{
+  margin-top:10%;
+  padding-left:2%;
+  
+}
+
+
+div.descriptionHow p{
+  
+  font-family:Avenir;
+  font-size:1rem;
+  
+}
+
+
+div.titleHowItWorks h1{
+  
+  font-size:2rem;
+  font-family:Avenir;
+  
+  
+  
+ div.listHow p{
+	
+	font-family:avenir;
+	font-size:2rem;
+	
+  }
+  
+  
+}
+
 
 
  
