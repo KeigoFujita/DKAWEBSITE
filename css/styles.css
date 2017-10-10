@@ -1,6 +1,5 @@
 
 
-
 div.navBar{
   
   position:fixed;
@@ -185,6 +184,22 @@ div.featuresBox{
   
 }
 
+div.refinedContainer p{
+    
+    color:White;
+    font-family:Avenir;
+	font-size:1.5rem;
+	letter-spacing:2px;
+	font-weight:500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+
 /***********HOVERS************/
 
 .buyNow:hover{
@@ -233,7 +248,7 @@ i {
 @media screen and (max-width :750px){
   
   
-  ul li:not(:nth-child(2)){
+  div.navBar ul li:not(:nth-child(2)){
             
             display: none;
 			
@@ -283,7 +298,7 @@ i {
 
   div.productImage img{
 	
-	content: url("/images/shades-mobile.jpg")
+	content: url("/images/Dashcam.jpg")
   }
   
   div.productDescription h1{
@@ -310,10 +325,17 @@ div.descriptionHow{
   border-bottom-color:#cccccc;
 }
 
+div.descriptionHow ul{
+  
+  list-style:none;
+  padding-left:0px;
+}
 
-div.descriptionHow p{
+div.descriptionHow li{
   
   font-family:Avenir;
+  margin-top:5%;
+  margin-left:0px;
   font-size:1rem;
   
 }
@@ -379,6 +401,92 @@ div.featuresBox p{
   font-weight:400;
   margin-top:10%;
   
+}
+
+
+div.refinedContainer{
+  margin-top:20%;
+  padding:0px 0px;
+}
+
+div.refinedContainer img{
+ 
+  width:100%;
+  height:auto;
+}
+
+div.refinedContainer p{
+    
+    color:White;
+    font-family:Avenir;
+	font-size:0.7rem;
+	letter-spacing:2px;
+	font-weight:500;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+
+
+}
+
+div.refinedContainer b{
+  
+  font-size:1.2rem
+}
+
+
+div.parkingContainer{
+  
+  margin-top:10%;
+  
+}
+
+
+div.parkingDescription h1{
+  
+  font-family:Avenir;
+  font-size:2rem;
+  margin-top:10%;
+  
+}
+
+div.parkingDescription ul{
+  
+  margin-top:10%;
+}
+div.parkingDescription li{
+  
+  font-family:Avenir;
+  font-size:1rem;
+  
+  
+}
+
+
+div.parkingPicContainer{
+  
+  margin-top:10%;
+  padding:0px 0px;,
+}
+
+div.parkingPicture img{
+  
+  width:100%;
+  height:auto;
+}
+
+div.comparisonPicContainer img{
+  
+  width:100%;
+  height:auto;
+  
+}
+
+div.comparisonPicContainer{
+  
+  margin-top:20%;
+
 }
 
  }
