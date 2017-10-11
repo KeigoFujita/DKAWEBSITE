@@ -1,5 +1,3 @@
-
-
 div.navBar{
   
   position:fixed;
@@ -70,10 +68,6 @@ div.logoPlaceholder img{
 }
 
 
-
-
-
-
 div.productImage{
   
    padding-top:10%;
@@ -89,7 +83,7 @@ div.productDescription{
   margin-top:10%;
   padding-top:10%;
   padding-left:10%;
-  
+  display: block;
   
 }
 
@@ -103,8 +97,23 @@ div.productDescription h1,p{
 div.productDescription p{
   
   font-size:1rem;
+    margin-top: 20px;
 }
 
+button.buyNow2{
+    
+    margin: 10% 0%;
+    color: white;
+    background-color: rgba(68, 219, 189, 1);;
+	padding: 8px 20px;
+    text-align: center;
+    font-family:Avenir;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(68, 219, 189, 1);
+    cursor: pointer;
+    
+}
 
 .imageShades{
   
@@ -122,15 +131,23 @@ div.productDescription a{
   color:rgba(0,0,0,0.6);
 }
 
-div.secondDescription{
-  
-  margin-top:30px;
-  
+
+div.howItWorksCOntainer{
+    
+    text-align: center;
+    padding: 0px;
+    margin-top:20%;
 }
 
+div.howItWorksCOntainer img{
+    
+    width: 60%;
+
+    height: auto;
+    
+}
 div.howItworks{
-  margin-top:30%;
-  margin-left:60%;
+     margin-top:20%;
 }
 div.titleHowItWorks{
   
@@ -138,57 +155,148 @@ div.titleHowItWorks{
   padding-left:2%;
   
 }
-
 div.descriptionHow{
   margin-top:10%;
   margin-bottom:10%;
   padding-left:2%;
   padding-bottom:20%;
 }
-
-
-div.descriptionHow p{
+div.descriptionHow ul{
+  
+  list-style: none;
+  padding-left: 0px;
+  
+}
+div.descriptionHow li{
   
   font-family:Avenir;
   font-size:1rem;
   
 }
-
-
 div.titleHowItWorks h1{
   
-  font-size:2rem;
+  font-size:2.5rem;
   font-family:Avenir;
    
- }
-
+ }  
 div.featuresContainer{
   
   display:flex;
-  padding:10% 20%;
+  padding:10% 20% 0% 20%;
+ border-top: 2px solid rgba(68, 219, 189, 1);
   
 }
-
 div.featuresContainertwo{
   
   display:flex;
-  padding:10% 20%;
+  padding:0% 20%;
   
 }
-
 div.featuresBox{
   
   margin:20px 20px;
-  height:100px;
-  width:100px;
+  height:auto;
+  width:40%;
+    
+text-align: center; 
+}
+div.featuresBox img{
+    
+    width: 70px;
+    height: auto;
+    
+    border: 2px solid rgba(68, 219, 189, 1);
+    
+    border-radius: 8px;
+    
+    
+}
+div.featuresBox h1{
+  
+  color:Black;
+  font-family:Avenir;
+  font-size:1rem;
+  font-weight:600;
+  letter-spacing:3px;
+  margin-top:10%;
   
 }
 
+
+div.parkingPicture img{
+    
+    
+    width: 100%;
+    height: auto;
+}
+div.parkingPicContainer{
+    
+    
+    padding: 0px;
+ 
+}
+div.parkingPicContainer,div.parkingContainer{
+    
+    
+    margin-top: 10%
+ 
+}
+div.parkingDescription h1{
+    
+    font-family: Avenir;
+    font-size: 3rem;
+    font-weight: 600;
+}
+div.parkingDescription{
+    
+    padding: 10% 20% 10% 5%;
+}
+
+
+
+
+div.nightPicture img{
+    
+    
+    width: 100%;
+    height: auto;
+}
+div.nightPicContainer{
+    
+    
+    padding: 0px;
+ 
+}
+div.nightPicContainer,div.nightContainer{
+    margin-top: 10%;
+}
+div.nightDescription h1{
+    
+    font-family: Avenir;
+    font-size: 3rem;
+    font-weight: 600;
+}
+div.nightDescription{
+    
+    padding: 10% 20% 10% 5%;
+}
+
+
+div.refinedContainer{
+    margin-top: 10%;
+    padding: 0px;
+}
+
+div.refinedContainer img{
+    
+   width: 100%;
+   height: auto;
+}
 div.refinedContainer p{
     
     color:White;
     font-family:Avenir;
-	font-size:1.5rem;
+	font-size:2.5rem;
 	letter-spacing:2px;
 	font-weight:500;
     position: absolute;
@@ -205,6 +313,14 @@ div.refinedContainer p{
 .buyNow:hover{
     
     animation-name: buyNowAnimation;
+    animation-duration: 0.5s;
+	animation-fill-mode:forwards;
+    
+}
+
+.buyNow2:hover{
+    
+    animation-name: buyNowAnimation2;
     animation-duration: 0.5s;
 	animation-fill-mode:forwards;
     
@@ -518,7 +634,31 @@ div.comparisonPicContainer{
 	  }
     }
 	
+@keyframes buyNowAnimation2{
+  
+  from {
+      
+	background-color: rgba(68, 219, 189, 1);
+	padding: 8px 20px;
+    text-align: center;
+    font-family:Avenir;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(68, 219, 189, 1);
+    
+    }
 	
+    to {
+    background-color:white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(68, 219, 189, 1);
+    text-align: center;
+    color:  rgba(68, 219, 189, 1);
+	  }
+    }
+	
+
 @keyframes logoAnimation{
     
     from{
