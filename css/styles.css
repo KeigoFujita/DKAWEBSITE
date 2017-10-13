@@ -206,7 +206,6 @@ div.featuresBox img{
     height: auto;
     
     border: 2px solid rgba(68, 219, 189, 1);
-    
     border-radius: 8px;
     
     
@@ -291,7 +290,9 @@ div.refinedContainer img{
     
    width: 100%;
    height: auto;
+ 
 }
+
 div.refinedContainer p{
     
     color:White;
@@ -299,10 +300,6 @@ div.refinedContainer p{
 	font-size:2.5rem;
 	letter-spacing:2px;
 	font-weight:500;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 
 
 }
@@ -355,9 +352,21 @@ i {
     -webkit-transform: rotate(-45deg);
 }
 
+input.subInput:focus{
+  outline: none !important;
+  border:none !important;
+}
 
+button.subButton:focus{
+  
+  outline:none;
+  
+}
 
-
+button.subButton:hover{
+  
+  background-color:rgba(68,210,189,1);
+}
 
 /***************MOBILE***************/
 
@@ -438,7 +447,7 @@ div.descriptionHow{
  
   border-bottom-style:solid;
   border-bottom-width:1px;
-  border-bottom-color:#cccccc;
+  border-bottom-color:rgba(68,219,189,1);
 }
 
 div.descriptionHow ul{
@@ -453,7 +462,7 @@ div.descriptionHow li{
   margin-top:5%;
   margin-left:0px;
   font-size:1rem;
-  
+  line-height:1.3rem;
 }
 
 
@@ -469,11 +478,16 @@ div.titleHowItWorks h1{
   margin-left:0;
 }
 
+div.howItWorksCOntainer{
+  
+  display:none;
+}
 
 div.featuresContainer{
   
   display:block;
   padding:10% 15% 0% 15%;
+  border:none;
 
 }
 
@@ -519,42 +533,40 @@ div.featuresBox p{
   
 }
 
+div.mainrefinedContainer{
+  padding:0px;
+}
 
 div.refinedContainer{
   margin-top:20%;
-  padding:0px 0px;
+  padding:20% 2%;
+  height:300px;
+  position:relative;
+  background:url('/images/refined-mobile.jpg') no-repeat;
+  background-size:cover;
 }
 
-div.refinedContainer img{
- 
-  width:100%;
-  height:auto;
-}
 
 div.refinedContainer p{
     
     color:White;
     font-family:Avenir;
-	font-size:0.7rem;
-	letter-spacing:2px;
-	font-weight:500;
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-15%, -50%);
-
-
+	font-size:1rem;
+	
+  
 }
 
 div.refinedContainer b{
   
-  font-size:1.2rem
+  font-size:2rem;
+  line-height:1.5rem;
+  letter-spacing:3px;
 }
 
 
 div.parkingContainer{
   
-  margin-top:10%;
+  margin-top:5%;
   
 }
 
@@ -563,8 +575,19 @@ div.parkingDescription h1{
   
   font-family:Avenir;
   font-size:2rem;
-  margin-top:10%;
   
+  
+}
+
+div.parkingDescription{
+    
+    padding:3% 2% 0% 2%;
+}
+
+div.parkingDescription p{
+  
+  margin-top:5%;
+  line-height:1.5rem;
 }
 
 div.parkingDescription ul{
@@ -578,6 +601,36 @@ div.parkingDescription li{
   
   
 }
+
+
+
+
+div.nightContainer{
+  
+  margin-top:5%;
+  
+}
+
+
+div.nightDescription h1{
+  
+  font-family:Avenir;
+  font-size:2rem;
+  
+  
+}
+
+div.nightDescription{
+    
+    padding:3% 2% 0% 2%;
+}
+
+div.nightDescription p{
+  
+  margin-top:5%;
+  line-height:1.5rem;
+}
+
 
 
 div.parkingPicContainer{
@@ -605,6 +658,88 @@ div.comparisonPicContainer{
 
 }
 
+div.productDescription div{
+  
+  display:none;
+}
+
+div.nightContainer{
+  
+  order:2;
+  
+}
+
+div.nightPicContainer{
+  order:1;
+}
+
+
+div.aboutUsContainer{
+  
+  padding:10% 0%;
+}
+
+div.aboutUsContainer h1{
+  
+  font-family:Avenir;
+  font-size:1.5rem;
+}
+
+div.newReleases{
+  
+  padding:10% 3%;
+  background-color:#f5f5f5;
+}
+
+div.newReleases h1{
+  
+  font-size:1.2rem;
+  font-family:Avenir;
+}
+
+div.subscribe{
+  
+  background-color:#f5f5f5;
+  
+  padding-bottom:30%;
+  
+}
+
+*::-webkit-input-placeholder {
+    color: #a2a2a1;
+}
+
+input.subInput{
+ 
+  
+  
+  width:100%;
+  background-color:#e8e8e8;
+  
+  font-family:Avenir;
+  border:none;
+  height:35px;
+  font-size:0.9rem;
+  padding:5px;
+}
+
+div.subButtonContainer{
+  
+  padding:3% 0%;
+}
+button.subButton{
+ 
+  
+  font-family:Avenir;
+  font-size:0.8rem;
+  height:35px;
+  width:100%;
+  border:none;
+  text-align:center;
+  background-color:rgba(68, 219, 189, 1);
+  color:White;
+  
+}
  }
 
 
